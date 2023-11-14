@@ -1,0 +1,30 @@
+body{
+    /* background-color: rgb(27, 27, 27); */
+    background: linear-gradient(to right, #282828 0%, #0d0e0e 100%);
+    color: white;
+}
+
+.home{
+    margin-top: 40vh;
+}
+
+.weather-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.current-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.btn{
+    transition: background .1s linear;
+}
+
+.btn:hover{
+    background-color: rgb(178, 178, 178);
+}

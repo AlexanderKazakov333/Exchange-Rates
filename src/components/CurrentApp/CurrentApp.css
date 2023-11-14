@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.loading{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.money-value{
+    margin: 20px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.value-each{
+    border: 1px solid white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+}
+
+.money-search{
+    margin: 25px 10px 10px 10px;
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.select-div{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+.select-value{
+    width: 360.67px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+.h4-value-no{
+    color: rgb(202, 66, 66);
+}
+
+.h4-value-have{
+    color: rgb(56, 191, 56);
+}
+
+.space{
+    height: 18px;
+}
+
+@media screen and (max-width: 1030px) {
+    .money-value{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .money-value{
+        grid-template-columns: 1fr 1fr ;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .select-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .money-search{
+        width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .money-value{
+        grid-template-columns: 1fr ;
+    }
+    .select-value{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .money-search{
+        width: 200px;
+    }
+  }
