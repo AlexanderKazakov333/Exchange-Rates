@@ -157,7 +157,7 @@ const WeatherApp = () => {
               {isLoading ? (
                 <div></div>
               ) : (
-                <div>Давление: {data.current.pressure_mb}Н/м²</div>
+                <div className="pressure">Давление: {data.current.pressure_mb}Н/м²</div>
               )}
             </div>
           )}

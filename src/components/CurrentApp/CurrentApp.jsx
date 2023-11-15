@@ -41,10 +41,16 @@ const CurrentApp = () => {
           item.rates.length === 0
         )
       }) 
+
+      noValue =  noValue.filter((item) => {
+        return(
+          item.id < 100
+        )
+      })
+
       setDataNoValues(noValue)
       console.log(noValue);
 
-      
     }
     catch(e) {
       console.log(e);
@@ -86,7 +92,7 @@ const CurrentApp = () => {
             <option value="lessK">Тенге ⬇</option>
             <option value="moreK">Тенге ⬆</option>
           </select>
-        </div> }
+        </div>}
         {isLoading ? <div className='loading'>Loading...</div> : <div>{data.sort((a, b) => {
           return(
             sortR === 'moreR' ? b.rates[0].buy_rub - a.rates[0].buy_rub : sortR === 'lessR' ? a.rates[0].buy_rub - b.rates[0].buy_rub : ''
